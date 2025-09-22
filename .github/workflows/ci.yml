@@ -23,10 +23,12 @@ jobs:
             - name: Run tests
               run: mvn clean test
             - name: Generate allure report
+              if: always()
               run: mvn allure:report
             - name: Serve allure report
               run: mvn allure:serve
             - name: upload allure report
+              if: always()
               uses: actions/upload-artifact@v4
               with:
                 name: allure-report
