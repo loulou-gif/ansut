@@ -1,0 +1,39 @@
+name: ci -ANSUT
+
+on:
+    push:
+        branches:
+            - main
+    pull_request:
+
+jobs:
+    build:
+        runs-on: windows-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v3
+            - name: Set up Java
+              uses: actions/setup-java@v3
+              with:
+                java-version: '17'
+                distribution: 'temurin'
+                cache: 'm2'
+            - name: Install dependencies
+              run: mvn clean install -q
+            - name: Run tests
+              run: mvn clean test
+            - name: Generate allure report
+              run: mvn allure:report
+            - name: Serve allure report
+              run: mvn allure:serve
+            - name: upload allure report
+              uses: actions/upload-artifact@v3
+              with:
+                name: allure-report
+                path: target/allure-report
+            - name: Upload allure report to GitHub Pages
+              uses: peaceiris/actions-gh-pages@v3
+              with:
+                github_token: ${{ secrets.GITHUB_TOKEN }}
+                publish_dir: target/allure-report
+                publish_branch: gh-pages
