@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="com.ansut.DiagnosticTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testDeleteDiagnostic"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.ansut.DiagnosticTest -->
+      <class name="com.ansut.LoginAnsutTest">
+        <methods>
+          <include name="testLoginSuccess"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.ansut.LoginAnsutTest -->
+      <class name="com.ansut.MethodsTest">
+        <methods>
+          <include name="testCreateMethod"/>
+          <include name="testModifyMethod"/>
+          <include name="testSearchMethod"/>
+          <include name="setUp"/>
+          <include name="testDeleteMethod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.ansut.MethodsTest -->
+      <class name="com.ansut.TravauxTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testSearchTravaux"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="testCreateTravaux"/>
+        </methods>
+      </class> <!-- com.ansut.TravauxTest -->
+      <class name="com.ansut.SectionTest">
+        <methods>
+          <include name="testDeleteSection"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.ansut.SectionTest -->
+      <class name="com.ansut.MaintenancierTest">
+        <methods>
+          <include name="testDeleteMaintenancier"/>
+          <include name="testSearchMaintenancier"/>
+          <include name="testCreateMaintenancier"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testModifyMaintenancier"/>
+        </methods>
+      </class> <!-- com.ansut.MaintenancierTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SuiteAnsut" parallel="classes" thread-count="1">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+    <!-- Test de connexion -->
+    <test name="TestConnexion">
+        <classes>
+            <class name="com.ansut.LoginAnsutTest"/>
+        </classes>
+    </test>
+    
+    <!-- Tests des modules de paramétrage -->
+    <test name="TestsParametrage">
+        <classes>
+            <!-- <class name="com.ansut.ClotureTest"/> -->
+            <class name="com.ansut.SectionTest"/>
+            <class name="com.ansut.OperateurTest"/>
+            <class name="com.ansut.ActifsTest"/>
+            <class name="com.ansut.DiagnosticTest"/>
+            <class name="com.ansut.MethodsTest"/>
+        </classes>
+    </test>
+    
+    <!-- Tests des travaux programmés -->
+    <!-- <test name="TestsTravaux">
+        <classes>
+            <class name="com.ansut.TravauxTest"/>
+        </classes>
+    </test> -->
+    <!-- <test name="TestsTicket">
+        <classes>
+            <class name="com.ansut.CreateTicket"/>
+        </classes>
+    </test> -->
+    
+</suite>

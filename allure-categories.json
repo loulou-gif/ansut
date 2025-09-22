@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Erreurs de Connexion",
+    "matchedStatuses": ["broken", "failed"],
+    "messageRegex": ".*(connexion|login|authentification).*"
+  },
+  {
+    "name": "Erreurs de Navigation",
+    "matchedStatuses": ["broken", "failed"],
+    "messageRegex": ".*(navigation|menu|page).*"
+  },
+  {
+    "name": "Erreurs de Données",
+    "matchedStatuses": ["broken", "failed"],
+    "messageRegex": ".*(données|data|saisie|input).*"
+  },
+  {
+    "name": "Erreurs de Validation",
+    "matchedStatuses": ["broken", "failed"],
+    "messageRegex": ".*(validation|vérification|assert).*"
+  },
+  {
+    "name": "Erreurs de Performance",
+    "matchedStatuses": ["broken", "failed"],
+    "messageRegex": ".*(timeout|lent|lenteur|performance).*"
+  },
+  {
+    "name": "Erreurs de Selenium",
+    "matchedStatuses": ["broken", "failed"],
+    "messageRegex": ".*(element|click|sendKeys|WebDriver).*"
+  },
+  {
+    "name": "Tests Ignorés",
+    "matchedStatuses": ["skipped"]
+  },
+  {
+    "name": "Tests Réussis",
+    "matchedStatuses": ["passed"]
+  }
+]
+
