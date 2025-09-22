@@ -17,7 +17,7 @@ jobs:
               with:
                 java-version: '17'
                 distribution: 'temurin'
-                
+
             - name: Install dependencies
               run: mvn clean install -q
             - name: Run tests
@@ -31,9 +31,9 @@ jobs:
               with:
                 name: allure-report
                 path: target/allure-report
-            - name: Upload allure report to GitHub Pages
-              uses: peaceiris/actions-gh-pages@v3
-              with:
-                github_token: ${{ secrets.GITHUB_TOKEN }}
-                publish_dir: target/allure-report
-                publish_branch: gh-pages
+            # - name: Upload allure report to GitHub Pages
+            #   uses: peaceiris/actions-gh-pages@v3
+            #   with:
+            #     github_token: ${{ secrets.GITHUB_TOKEN }}
+            #     publish_dir: target/allure-report
+            #     publish_branch: gh-pages
