@@ -27,7 +27,7 @@ jobs:
             - name: Serve allure report
               run: mvn allure:serve
             - name: upload allure report
-              uses: actions/upload-artifact@v3
+              uses: actions/upload-artifact@v4
               with:
                 name: allure-report
                 path: target/allure-report
