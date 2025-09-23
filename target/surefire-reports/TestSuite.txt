@@ -1,109 +1,69 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 33, Failures: 10, Errors: 0, Skipped: 5, Time elapsed: 564.493 s <<< FAILURE! - in TestSuite
-testDeleteDiagnostic(com.ansut.DiagnosticTest)  Time elapsed: 1.461 s  <<< FAILURE!
-java.lang.AssertionError: 
-Test de suppression échoué : stale element reference: stale element not found in the current frame
-  (Session info: chrome=140.0.7339.128)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b98d6c7b8f77319f5f50d6904a8b4c71, clickElement {id=f.8594F09D563F33A34BBE8B152EB99FA5.d.6C4BA3AE3F46120289A7F853E537D5FE.e.78}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51792}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51792/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (b98d6c7b8f77319f5f50d6904a8b4c71)] -> class name: swal2-confirm]
-Session ID: b98d6c7b8f77319f5f50d6904a8b4c71
-	at com.ansut.DiagnosticTest.testDeleteDiagnostic(DiagnosticTest.java:154)
-
-testLoginSuccess(com.ansut.LoginAnsutTest)  Time elapsed: 4.824 s  <<< FAILURE!
+Tests run: 27, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 435.362 s <<< FAILURE! - in TestSuite
+testLoginSuccess(com.ansut.LoginAnsutTest)  Time elapsed: 9.394 s  <<< FAILURE!
 java.lang.AssertionError: Test de connexion échoué : Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
 	at com.ansut.LoginAnsutTest.testLoginSuccess(LoginAnsutTest.java:85)
 
-testCreateMaintenancier(com.ansut.MaintenancierTest)  Time elapsed: 63.408 s  <<< FAILURE!
-java.lang.AssertionError: 
-Test de création échoué : Expected condition failed: waiting for element to be clickable: By.xpath: /html/body/app-root/div/app-main-layout/div/div[2]/app-parameters/div/div[2]/app-maintenancier/div/div[2]/form/div/div[1]/input (tried for 60 second(s) with 500 milliseconds interval)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51870}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51870/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e2316f2e5d1bd2cec6610c2716b02df6
-	at com.ansut.MaintenancierTest.testCreateMaintenancier(MaintenancierTest.java:82)
-
-testSearchMaintenancier(com.ansut.MaintenancierTest)  Time elapsed: 60.229 s  <<< FAILURE!
-java.lang.AssertionError: 
-Test de recherche échoué : Expected condition failed: waiting for element to be clickable: By.xpath: /html/body/app-root/div/app-main-layout/div/div[2]/app-parameters/div/div[2]/app-maintenancier/div/div[1]/div/div[2]/div/app-filter-v2/div/div[2]/div[1]/div[2]/ul/li[1]/small (tried for 60 second(s) with 500 milliseconds interval)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51870}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51870/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e2316f2e5d1bd2cec6610c2716b02df6
-	at com.ansut.MaintenancierTest.testSearchMaintenancier(MaintenancierTest.java:106)
-
-testModifyMaintenancier(com.ansut.MaintenancierTest)  Time elapsed: 60.372 s  <<< FAILURE!
-java.lang.AssertionError: 
-Test de modification échoué : Expected condition failed: waiting for element to be clickable: By.xpath: /html/body/app-root/div/app-main-layout/div/div[2]/app-parameters/div/div[2]/app-maintenancier/div/table-component/div[1]/table/tbody/tr[1]/td[3]/span/button[1]/img (tried for 60 second(s) with 500 milliseconds interval)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51870}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51870/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e2316f2e5d1bd2cec6610c2716b02df6
-	at com.ansut.MaintenancierTest.testModifyMaintenancier(MaintenancierTest.java:130)
-
-testDeleteMaintenancier(com.ansut.MaintenancierTest)  Time elapsed: 60.478 s  <<< FAILURE!
-java.lang.AssertionError: 
-Test de suppression échoué : Expected condition failed: waiting for element to be clickable: By.cssSelector: body > app-root > div > app-main-layout > div > div.main-content.main > app-parameters > div > div.tab-content.mt-3 > app-maintenancier > div > table-component > div.table-container.card > table > tbody > tr:nth-child(1) > td:nth-child(3) > span > button:nth-child(2) > img (tried for 60 second(s) with 500 milliseconds interval)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51870}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51870/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e2316f2e5d1bd2cec6610c2716b02df6
-	at com.ansut.MaintenancierTest.testDeleteMaintenancier(MaintenancierTest.java:154)
-
-setUp(com.ansut.MethodsTest)  Time elapsed: 63.146 s  <<< FAILURE!
-java.lang.AssertionError: 
-Configuration échouée : unknown error: JavaScript code failed
-from unknown command: 'Runtime.evaluate' wasn't found
-  (Session info: chrome=140.0.7339.128)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3b9db27e2cff2136b25778e4589cf26c, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64007}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64007/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3b9db27e2cff2136b25778e4589cf26c
-	at com.ansut.MethodsTest.setUp(MethodsTest.java:58)
-
-testDeleteSection(com.ansut.SectionTest)  Time elapsed: 1.073 s  <<< FAILURE!
-java.lang.AssertionError: 
-Test de suppression échoué : stale element reference: stale element not found in the current frame
-  (Session info: chrome=140.0.7339.128)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2a91a49248f6b7c0dea6c95c72bc1491, clickElement {id=f.BD07C5F24E6F3E4DB1145B00C0A86EC1.d.8C079BB5FF98C3D01C7CC65EA31301A2.e.112}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56215}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56215/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (2a91a49248f6b7c0dea6c95c72bc1491)] -> class name: swal2-confirm]
-Session ID: 2a91a49248f6b7c0dea6c95c72bc1491
-	at com.ansut.SectionTest.testDeleteSection(SectionTest.java:182)
-
-testCreateTravaux(com.ansut.TravauxTest)  Time elapsed: 78.97 s  <<< FAILURE!
+testCreateMethod(com.ansut.MethodsTest)  Time elapsed: 62.822 s  <<< FAILURE!
 java.lang.AssertionError: 
 Test de création échoué : Expected condition failed: waiting for element to be clickable: By.className: swal2-confirm (tried for 60 second(s) with 500 milliseconds interval)
 Build info: version: '4.27.0', revision: 'd6e718d134'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61880}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61880/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fc52244a7b7a89b882f2c6f737125145
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58083}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58083/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ce8c1740ad23b40f26f9f8ef308acd7
+	at com.ansut.MethodsTest.testCreateMethod(MethodsTest.java:82)
+
+testDeleteOperateur(com.ansut.OperateurTest)  Time elapsed: 1.965 s  <<< FAILURE!
+java.lang.AssertionError: 
+Test de suppression échoué : stale element reference: stale element not found in the current frame
+  (Session info: chrome=140.0.7339.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe189837a675f2074df7bd4c4f241380, clickElement {id=f.AC46FDD48F5AB2A894599F0362E4A658.d.7E196B7C8F304C13A25DB3EA15734CF1.e.92}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60231}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60231/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (fe189837a675f2074df7bd4c4f241380)] -> class name: swal2-confirm]
+Session ID: fe189837a675f2074df7bd4c4f241380
+	at com.ansut.OperateurTest.testDeleteOperateur(OperateurTest.java:182)
+
+testDeleteSection(com.ansut.SectionTest)  Time elapsed: 1.094 s  <<< FAILURE!
+java.lang.AssertionError: 
+Test de suppression échoué : stale element reference: stale element not found in the current frame
+  (Session info: chrome=140.0.7339.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2058775015addd7b3ea9e1d0d5ace3b0, clickElement {id=f.55BF52A2CD3F2A18B664D9BE7C0B480B.d.BEF58C0EFF9364F6EA6E4DC20229CD60.e.89}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57087}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57087/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2058775015addd7b3ea9e1d0d5ace3b0)] -> class name: swal2-confirm]
+Session ID: 2058775015addd7b3ea9e1d0d5ace3b0
+	at com.ansut.SectionTest.testDeleteSection(SectionTest.java:182)
+
+testCreateTravaux(com.ansut.TravauxTest)  Time elapsed: 8.52 s  <<< FAILURE!
+java.lang.AssertionError: 
+Test de création échoué : invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=140.0.7339.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [516a51052a83161065a8d51bb5b81d00, findElement {value=/html/body/app-root/div/app-main-layout/div/div[2]/app-travaux-programmes/div/app-form-travaux-programmes/div/div/div[2]/div/form/div[1]/div/div/div[2]/div/div[1]/div[1]/p-calendar/span/div/div[1]/div/div[2]/table/tbody/tr[4]/td[7]/span, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55534}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55534/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 516a51052a83161065a8d51bb5b81d00
 	at com.ansut.TravauxTest.testCreateTravaux(TravauxTest.java:111)
 
-testSearchTravaux(com.ansut.TravauxTest)  Time elapsed: 60.406 s  <<< FAILURE!
+testSearchTravaux(com.ansut.TravauxTest)  Time elapsed: 60.131 s  <<< FAILURE!
 java.lang.AssertionError: 
 Test de recherche échoué : Expected condition failed: waiting for element to be clickable: By.className: fa-filter (tried for 60 second(s) with 500 milliseconds interval)
 Build info: version: '4.27.0', revision: 'd6e718d134'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61880}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61880/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fc52244a7b7a89b882f2c6f737125145
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55534}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55534/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 516a51052a83161065a8d51bb5b81d00
 	at com.ansut.TravauxTest.testSearchTravaux(TravauxTest.java:135)
 

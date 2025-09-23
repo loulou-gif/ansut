@@ -1,109 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="31" passed="18" failed="9" skipped="4">
+<testng-results ignored="0" total="27" passed="21" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-22T13:26:14 GMT" name="Surefire suite" finished-at="2025-09-22T13:35:36 GMT" duration-ms="562295">
+  <suite started-at="2025-09-23T14:43:37 GMT" name="Surefire suite" finished-at="2025-09-23T14:50:42 GMT" duration-ms="425087">
     <groups>
     </groups>
-    <test started-at="2025-09-22T13:26:14 GMT" name="Surefire test" finished-at="2025-09-22T13:35:36 GMT" duration-ms="562295">
+    <test started-at="2025-09-23T14:43:37 GMT" name="Surefire test" finished-at="2025-09-23T14:50:42 GMT" duration-ms="425087">
       <class name="com.ansut.MethodsTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ansut.MethodsTest@3a095ec0]" started-at="2025-09-22T13:31:56 GMT" name="setUp" finished-at="2025-09-22T13:31:58 GMT" duration-ms="1789" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Configuration échouée : unknown error: JavaScript code failed
-from unknown command: 'Runtime.evaluate' wasn't found
-  (Session info: chrome=140.0.7339.128)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3b9db27e2cff2136b25778e4589cf26c, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64007}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64007/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3b9db27e2cff2136b25778e4589cf26c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Configuration échouée : unknown error: JavaScript code failed
-from unknown command: 'Runtime.evaluate' wasn't found
-  (Session info: chrome=140.0.7339.128)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3b9db27e2cff2136b25778e4589cf26c, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64007}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64007/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3b9db27e2cff2136b25778e4589cf26c
-at org.testng.Assert.fail(Assert.java:111)
-at com.ansut.MethodsTest.setUp(MethodsTest.java:58)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ansut.MethodsTest@37a64f9d]" started-at="2025-09-23T14:45:24 GMT" name="setUp" finished-at="2025-09-23T14:45:32 GMT" duration-ms="8617" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCreateMethod()[pri:1, instance:com.ansut.MethodsTest@3a095ec0]" started-at="2025-09-22T13:31:58 GMT" name="testCreateMethod" description="Test de création d&#039;une méthode" finished-at="2025-09-22T13:31:58 GMT" duration-ms="0" status="SKIP">
+        <test-method signature="testCreateMethod()[pri:1, instance:com.ansut.MethodsTest@37a64f9d]" started-at="2025-09-23T14:45:32 GMT" name="testCreateMethod" description="Test de création d&#039;une méthode" finished-at="2025-09-23T14:46:35 GMT" duration-ms="62820" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Configuration échouée : unknown error: JavaScript code failed
-from unknown command: 'Runtime.evaluate' wasn't found
-  (Session info: chrome=140.0.7339.128)
+              <![CDATA[Test de création échoué : Expected condition failed: waiting for element to be clickable: By.className: swal2-confirm (tried for 60 second(s) with 500 milliseconds interval)
 Build info: version: '4.27.0', revision: 'd6e718d134'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3b9db27e2cff2136b25778e4589cf26c, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64007}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64007/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3b9db27e2cff2136b25778e4589cf26c]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58083}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58083/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ce8c1740ad23b40f26f9f8ef308acd7]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Configuration échouée : unknown error: JavaScript code failed
-from unknown command: 'Runtime.evaluate' wasn't found
-  (Session info: chrome=140.0.7339.128)
+              <![CDATA[java.lang.AssertionError: Test de création échoué : Expected condition failed: waiting for element to be clickable: By.className: swal2-confirm (tried for 60 second(s) with 500 milliseconds interval)
 Build info: version: '4.27.0', revision: 'd6e718d134'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3b9db27e2cff2136b25778e4589cf26c, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64007}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64007/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3b9db27e2cff2136b25778e4589cf26c
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58083}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58083/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ce8c1740ad23b40f26f9f8ef308acd7
 at org.testng.Assert.fail(Assert.java:111)
-at com.ansut.MethodsTest.setUp(MethodsTest.java:58)
+at com.ansut.MethodsTest.testCreateMethod(MethodsTest.java:82)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:739)
 at org.testng.TestRunner.run(TestRunner.java:614)
@@ -131,269 +69,95 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateMethod -->
-        <test-method signature="testSearchMethod()[pri:2, instance:com.ansut.MethodsTest@3a095ec0]" started-at="2025-09-22T13:31:58 GMT" name="testSearchMethod" description="Test de recherche d&#039;une méthode" finished-at="2025-09-22T13:31:58 GMT" duration-ms="0" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Configuration échouée : unknown error: JavaScript code failed
-from unknown command: 'Runtime.evaluate' wasn't found
-  (Session info: chrome=140.0.7339.128)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3b9db27e2cff2136b25778e4589cf26c, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64007}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64007/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3b9db27e2cff2136b25778e4589cf26c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Configuration échouée : unknown error: JavaScript code failed
-from unknown command: 'Runtime.evaluate' wasn't found
-  (Session info: chrome=140.0.7339.128)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3b9db27e2cff2136b25778e4589cf26c, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64007}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64007/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3b9db27e2cff2136b25778e4589cf26c
-at org.testng.Assert.fail(Assert.java:111)
-at com.ansut.MethodsTest.setUp(MethodsTest.java:58)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="testSearchMethod()[pri:2, instance:com.ansut.MethodsTest@37a64f9d]" started-at="2025-09-23T14:46:35 GMT" name="testSearchMethod" description="Test de recherche d&#039;une méthode" finished-at="2025-09-23T14:46:36 GMT" duration-ms="640" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchMethod -->
-        <test-method signature="testModifyMethod()[pri:3, instance:com.ansut.MethodsTest@3a095ec0]" started-at="2025-09-22T13:31:58 GMT" name="testModifyMethod" description="Test de modification d&#039;une méthode" finished-at="2025-09-22T13:31:58 GMT" duration-ms="0" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Configuration échouée : unknown error: JavaScript code failed
-from unknown command: 'Runtime.evaluate' wasn't found
-  (Session info: chrome=140.0.7339.128)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3b9db27e2cff2136b25778e4589cf26c, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64007}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64007/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3b9db27e2cff2136b25778e4589cf26c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Configuration échouée : unknown error: JavaScript code failed
-from unknown command: 'Runtime.evaluate' wasn't found
-  (Session info: chrome=140.0.7339.128)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3b9db27e2cff2136b25778e4589cf26c, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64007}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64007/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3b9db27e2cff2136b25778e4589cf26c
-at org.testng.Assert.fail(Assert.java:111)
-at com.ansut.MethodsTest.setUp(MethodsTest.java:58)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="testModifyMethod()[pri:3, instance:com.ansut.MethodsTest@37a64f9d]" started-at="2025-09-23T14:46:36 GMT" name="testModifyMethod" description="Test de modification d&#039;une méthode" finished-at="2025-09-23T14:47:12 GMT" duration-ms="36248" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testModifyMethod -->
-        <test-method signature="testDeleteMethod()[pri:4, instance:com.ansut.MethodsTest@3a095ec0]" started-at="2025-09-22T13:31:58 GMT" name="testDeleteMethod" description="Test de suppression d&#039;une méthode" finished-at="2025-09-22T13:31:58 GMT" duration-ms="0" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Configuration échouée : unknown error: JavaScript code failed
-from unknown command: 'Runtime.evaluate' wasn't found
-  (Session info: chrome=140.0.7339.128)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3b9db27e2cff2136b25778e4589cf26c, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64007}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64007/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3b9db27e2cff2136b25778e4589cf26c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Configuration échouée : unknown error: JavaScript code failed
-from unknown command: 'Runtime.evaluate' wasn't found
-  (Session info: chrome=140.0.7339.128)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3b9db27e2cff2136b25778e4589cf26c, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64007}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64007/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3b9db27e2cff2136b25778e4589cf26c
-at org.testng.Assert.fail(Assert.java:111)
-at com.ansut.MethodsTest.setUp(MethodsTest.java:58)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="testDeleteMethod()[pri:4, instance:com.ansut.MethodsTest@37a64f9d]" started-at="2025-09-23T14:47:12 GMT" name="testDeleteMethod" description="Test de suppression d&#039;une méthode" finished-at="2025-09-23T14:47:36 GMT" duration-ms="23472" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteMethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ansut.MethodsTest@3a095ec0]" started-at="2025-09-22T13:31:58 GMT" name="tearDown" finished-at="2025-09-22T13:31:58 GMT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ansut.MethodsTest@37a64f9d]" started-at="2025-09-23T14:47:36 GMT" name="tearDown" finished-at="2025-09-23T14:47:36 GMT" duration-ms="251" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ansut.MethodsTest -->
       <class name="com.ansut.ActifsTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ansut.ActifsTest@25b865b5]" started-at="2025-09-22T13:26:14 GMT" name="setUp" finished-at="2025-09-22T13:26:28 GMT" duration-ms="14101" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ansut.ActifsTest@72ed9aad]" started-at="2025-09-23T14:43:38 GMT" name="setUp" finished-at="2025-09-23T14:43:57 GMT" duration-ms="19208" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCreateActifs()[pri:1, instance:com.ansut.ActifsTest@25b865b5]" started-at="2025-09-22T13:26:28 GMT" name="testCreateActifs" description="Test de création d&#039;un actif" finished-at="2025-09-22T13:26:40 GMT" duration-ms="11962" status="PASS">
+        <test-method signature="testCreateActifs()[pri:1, instance:com.ansut.ActifsTest@72ed9aad]" started-at="2025-09-23T14:43:57 GMT" name="testCreateActifs" description="Test de création d&#039;un actif" finished-at="2025-09-23T14:44:11 GMT" duration-ms="13604" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateActifs -->
-        <test-method signature="testSearchActifs()[pri:2, instance:com.ansut.ActifsTest@25b865b5]" started-at="2025-09-22T13:26:40 GMT" name="testSearchActifs" description="Test de recherche d&#039;un actif" finished-at="2025-09-22T13:26:41 GMT" duration-ms="731" status="PASS">
+        <test-method signature="testSearchActifs()[pri:2, instance:com.ansut.ActifsTest@72ed9aad]" started-at="2025-09-23T14:44:11 GMT" name="testSearchActifs" description="Test de recherche d&#039;un actif" finished-at="2025-09-23T14:44:13 GMT" duration-ms="2294" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchActifs -->
-        <test-method signature="testModifyActifs()[pri:3, instance:com.ansut.ActifsTest@25b865b5]" started-at="2025-09-22T13:26:41 GMT" name="testModifyActifs" description="Test de modification d&#039;un actif" finished-at="2025-09-22T13:26:43 GMT" duration-ms="1959" status="PASS">
+        <test-method signature="testModifyActifs()[pri:3, instance:com.ansut.ActifsTest@72ed9aad]" started-at="2025-09-23T14:44:13 GMT" name="testModifyActifs" description="Test de modification d&#039;un actif" finished-at="2025-09-23T14:44:17 GMT" duration-ms="3892" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testModifyActifs -->
-        <test-method signature="testDeleteActifs()[pri:4, instance:com.ansut.ActifsTest@25b865b5]" started-at="2025-09-22T13:26:43 GMT" name="testDeleteActifs" description="Test de suppression d&#039;un actif" finished-at="2025-09-22T13:26:59 GMT" duration-ms="15884" status="PASS">
+        <test-method signature="testDeleteActifs()[pri:4, instance:com.ansut.ActifsTest@72ed9aad]" started-at="2025-09-23T14:44:17 GMT" name="testDeleteActifs" description="Test de suppression d&#039;un actif" finished-at="2025-09-23T14:44:23 GMT" duration-ms="5481" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteActifs -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ansut.ActifsTest@25b865b5]" started-at="2025-09-22T13:26:59 GMT" name="tearDown" finished-at="2025-09-22T13:26:59 GMT" duration-ms="347" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ansut.ActifsTest@72ed9aad]" started-at="2025-09-23T14:44:23 GMT" name="tearDown" finished-at="2025-09-23T14:44:23 GMT" duration-ms="340" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ansut.ActifsTest -->
       <class name="com.ansut.SectionTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ansut.SectionTest@54da32dc]" started-at="2025-09-22T13:32:31 GMT" name="setUp" finished-at="2025-09-22T13:32:41 GMT" duration-ms="9225" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ansut.SectionTest@f9b5552]" started-at="2025-09-23T14:48:09 GMT" name="setUp" finished-at="2025-09-23T14:48:27 GMT" duration-ms="18113" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ansut.SectionTest@54da32dc]" started-at="2025-09-22T13:32:41 GMT" name="beforeMethod" finished-at="2025-09-22T13:32:42 GMT" duration-ms="1009" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ansut.SectionTest@f9b5552]" started-at="2025-09-23T14:48:27 GMT" name="beforeMethod" finished-at="2025-09-23T14:48:28 GMT" duration-ms="1002" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="testCreateSection()[pri:1, instance:com.ansut.SectionTest@54da32dc]" started-at="2025-09-22T13:32:42 GMT" name="testCreateSection" description="Test de création d&#039;une section" finished-at="2025-09-22T13:32:45 GMT" duration-ms="2943" status="PASS">
+        <test-method signature="testCreateSection()[pri:1, instance:com.ansut.SectionTest@f9b5552]" started-at="2025-09-23T14:48:28 GMT" name="testCreateSection" description="Test de création d&#039;une section" finished-at="2025-09-23T14:48:32 GMT" duration-ms="3552" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateSection -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ansut.SectionTest@54da32dc]" started-at="2025-09-22T13:32:45 GMT" name="afterMethod" finished-at="2025-09-22T13:32:47 GMT" duration-ms="2005" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ansut.SectionTest@f9b5552]" started-at="2025-09-23T14:48:32 GMT" name="afterMethod" finished-at="2025-09-23T14:48:34 GMT" duration-ms="2007" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ansut.SectionTest@54da32dc]" started-at="2025-09-22T13:32:47 GMT" name="beforeMethod" finished-at="2025-09-22T13:32:48 GMT" duration-ms="1005" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ansut.SectionTest@f9b5552]" started-at="2025-09-23T14:48:34 GMT" name="beforeMethod" finished-at="2025-09-23T14:48:35 GMT" duration-ms="1007" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="testSearchSection()[pri:2, instance:com.ansut.SectionTest@54da32dc]" started-at="2025-09-22T13:32:48 GMT" name="testSearchSection" description="Test de recherche d&#039;une section" finished-at="2025-09-22T13:32:48 GMT" duration-ms="898" status="PASS">
+        <test-method signature="testSearchSection()[pri:2, instance:com.ansut.SectionTest@f9b5552]" started-at="2025-09-23T14:48:35 GMT" name="testSearchSection" description="Test de recherche d&#039;une section" finished-at="2025-09-23T14:48:36 GMT" duration-ms="1313" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchSection -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ansut.SectionTest@54da32dc]" started-at="2025-09-22T13:32:48 GMT" name="afterMethod" finished-at="2025-09-22T13:32:51 GMT" duration-ms="2017" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ansut.SectionTest@f9b5552]" started-at="2025-09-23T14:48:36 GMT" name="afterMethod" finished-at="2025-09-23T14:48:38 GMT" duration-ms="2002" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ansut.SectionTest@54da32dc]" started-at="2025-09-22T13:32:51 GMT" name="beforeMethod" finished-at="2025-09-22T13:32:52 GMT" duration-ms="1008" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ansut.SectionTest@f9b5552]" started-at="2025-09-23T14:48:38 GMT" name="beforeMethod" finished-at="2025-09-23T14:48:39 GMT" duration-ms="1005" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="testModifySection()[pri:3, instance:com.ansut.SectionTest@54da32dc]" started-at="2025-09-22T13:32:52 GMT" name="testModifySection" description="Test de modification d&#039;une section" finished-at="2025-09-22T13:32:53 GMT" duration-ms="1332" status="PASS">
+        <test-method signature="testModifySection()[pri:3, instance:com.ansut.SectionTest@f9b5552]" started-at="2025-09-23T14:48:39 GMT" name="testModifySection" description="Test de modification d&#039;une section" finished-at="2025-09-23T14:48:40 GMT" duration-ms="1600" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testModifySection -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ansut.SectionTest@54da32dc]" started-at="2025-09-22T13:32:53 GMT" name="afterMethod" finished-at="2025-09-22T13:32:55 GMT" duration-ms="2018" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ansut.SectionTest@f9b5552]" started-at="2025-09-23T14:48:40 GMT" name="afterMethod" finished-at="2025-09-23T14:48:42 GMT" duration-ms="2007" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ansut.SectionTest@54da32dc]" started-at="2025-09-22T13:32:55 GMT" name="beforeMethod" finished-at="2025-09-22T13:32:56 GMT" duration-ms="1009" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ansut.SectionTest@f9b5552]" started-at="2025-09-23T14:48:42 GMT" name="beforeMethod" finished-at="2025-09-23T14:48:43 GMT" duration-ms="1007" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="testDeleteSection()[pri:4, instance:com.ansut.SectionTest@54da32dc]" started-at="2025-09-22T13:32:56 GMT" name="testDeleteSection" description="Test de suppression d&#039;une section" finished-at="2025-09-22T13:32:57 GMT" duration-ms="1068" status="FAIL">
+        <test-method signature="testDeleteSection()[pri:4, instance:com.ansut.SectionTest@f9b5552]" started-at="2025-09-23T14:48:43 GMT" name="testDeleteSection" description="Test de suppression d&#039;une section" finished-at="2025-09-23T14:48:45 GMT" duration-ms="1085" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Test de suppression échoué : stale element reference: stale element not found in the current frame
@@ -402,10 +166,10 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.27.0', revision: 'd6e718d134'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2a91a49248f6b7c0dea6c95c72bc1491, clickElement {id=f.BD07C5F24E6F3E4DB1145B00C0A86EC1.d.8C079BB5FF98C3D01C7CC65EA31301A2.e.112}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56215}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56215/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (2a91a49248f6b7c0dea6c95c72bc1491)] -> class name: swal2-confirm]
-Session ID: 2a91a49248f6b7c0dea6c95c72bc1491]]>
+Command: [2058775015addd7b3ea9e1d0d5ace3b0, clickElement {id=f.55BF52A2CD3F2A18B664D9BE7C0B480B.d.BEF58C0EFF9364F6EA6E4DC20229CD60.e.89}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57087}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57087/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2058775015addd7b3ea9e1d0d5ace3b0)] -> class name: swal2-confirm]
+Session ID: 2058775015addd7b3ea9e1d0d5ace3b0]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Test de suppression échoué : stale element reference: stale element not found in the current frame
@@ -414,10 +178,10 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.27.0', revision: 'd6e718d134'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2a91a49248f6b7c0dea6c95c72bc1491, clickElement {id=f.BD07C5F24E6F3E4DB1145B00C0A86EC1.d.8C079BB5FF98C3D01C7CC65EA31301A2.e.112}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56215}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56215/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (2a91a49248f6b7c0dea6c95c72bc1491)] -> class name: swal2-confirm]
-Session ID: 2a91a49248f6b7c0dea6c95c72bc1491
+Command: [2058775015addd7b3ea9e1d0d5ace3b0, clickElement {id=f.55BF52A2CD3F2A18B664D9BE7C0B480B.d.BEF58C0EFF9364F6EA6E4DC20229CD60.e.89}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57087}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57087/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2058775015addd7b3ea9e1d0d5ace3b0)] -> class name: swal2-confirm]
+Session ID: 2058775015addd7b3ea9e1d0d5ace3b0
 at org.testng.Assert.fail(Assert.java:111)
 at com.ansut.SectionTest.testDeleteSection(SectionTest.java:182)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -459,105 +223,43 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteSection -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ansut.SectionTest@54da32dc]" started-at="2025-09-22T13:32:57 GMT" name="afterMethod" finished-at="2025-09-22T13:32:59 GMT" duration-ms="2008" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ansut.SectionTest@f9b5552]" started-at="2025-09-23T14:48:45 GMT" name="afterMethod" finished-at="2025-09-23T14:48:47 GMT" duration-ms="2006" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ansut.SectionTest@54da32dc]" started-at="2025-09-22T13:32:59 GMT" name="tearDown" finished-at="2025-09-22T13:32:59 GMT" duration-ms="267" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ansut.SectionTest@f9b5552]" started-at="2025-09-23T14:48:47 GMT" name="tearDown" finished-at="2025-09-23T14:48:47 GMT" duration-ms="423" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ansut.SectionTest -->
       <class name="com.ansut.DiagnosticTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ansut.DiagnosticTest@201aa8c1]" started-at="2025-09-22T13:27:28 GMT" name="setUp" finished-at="2025-09-22T13:27:33 GMT" duration-ms="5351" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ansut.DiagnosticTest@18a645fd]" started-at="2025-09-23T14:44:54 GMT" name="setUp" finished-at="2025-09-23T14:45:03 GMT" duration-ms="9154" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCreateDiagnostic()[pri:1, instance:com.ansut.DiagnosticTest@201aa8c1]" started-at="2025-09-22T13:27:33 GMT" name="testCreateDiagnostic" description="Test de création d&#039;un diagnostic" finished-at="2025-09-22T13:27:36 GMT" duration-ms="3112" status="PASS">
+        <test-method signature="testCreateDiagnostic()[pri:1, instance:com.ansut.DiagnosticTest@18a645fd]" started-at="2025-09-23T14:45:03 GMT" name="testCreateDiagnostic" description="Test de création d&#039;un diagnostic" finished-at="2025-09-23T14:45:06 GMT" duration-ms="3588" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateDiagnostic -->
-        <test-method signature="testSearchDiagnostic()[pri:2, instance:com.ansut.DiagnosticTest@201aa8c1]" started-at="2025-09-22T13:27:36 GMT" name="testSearchDiagnostic" description="Test de recherche d&#039;un diagnostic" finished-at="2025-09-22T13:27:37 GMT" duration-ms="823" status="PASS">
+        <test-method signature="testSearchDiagnostic()[pri:2, instance:com.ansut.DiagnosticTest@18a645fd]" started-at="2025-09-23T14:45:07 GMT" name="testSearchDiagnostic" description="Test de recherche d&#039;un diagnostic" finished-at="2025-09-23T14:45:08 GMT" duration-ms="1043" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchDiagnostic -->
-        <test-method signature="testModifyDiagnostic()[pri:3, instance:com.ansut.DiagnosticTest@201aa8c1]" started-at="2025-09-22T13:27:37 GMT" name="testModifyDiagnostic" description="Test de modification d&#039;un diagnostic" finished-at="2025-09-22T13:27:39 GMT" duration-ms="1733" status="PASS">
+        <test-method signature="testModifyDiagnostic()[pri:3, instance:com.ansut.DiagnosticTest@18a645fd]" started-at="2025-09-23T14:45:08 GMT" name="testModifyDiagnostic" description="Test de modification d&#039;un diagnostic" finished-at="2025-09-23T14:45:10 GMT" duration-ms="2201" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testModifyDiagnostic -->
-        <test-method signature="testDeleteDiagnostic()[pri:4, instance:com.ansut.DiagnosticTest@201aa8c1]" started-at="2025-09-22T13:27:39 GMT" name="testDeleteDiagnostic" description="Test de suppression d&#039;un diagnostic" finished-at="2025-09-22T13:27:40 GMT" duration-ms="1420" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Test de suppression échoué : stale element reference: stale element not found in the current frame
-  (Session info: chrome=140.0.7339.128)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b98d6c7b8f77319f5f50d6904a8b4c71, clickElement {id=f.8594F09D563F33A34BBE8B152EB99FA5.d.6C4BA3AE3F46120289A7F853E537D5FE.e.78}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51792}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51792/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (b98d6c7b8f77319f5f50d6904a8b4c71)] -> class name: swal2-confirm]
-Session ID: b98d6c7b8f77319f5f50d6904a8b4c71]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Test de suppression échoué : stale element reference: stale element not found in the current frame
-  (Session info: chrome=140.0.7339.128)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b98d6c7b8f77319f5f50d6904a8b4c71, clickElement {id=f.8594F09D563F33A34BBE8B152EB99FA5.d.6C4BA3AE3F46120289A7F853E537D5FE.e.78}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51792}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51792/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (b98d6c7b8f77319f5f50d6904a8b4c71)] -> class name: swal2-confirm]
-Session ID: b98d6c7b8f77319f5f50d6904a8b4c71
-at org.testng.Assert.fail(Assert.java:111)
-at com.ansut.DiagnosticTest.testDeleteDiagnostic(DiagnosticTest.java:154)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="testDeleteDiagnostic()[pri:4, instance:com.ansut.DiagnosticTest@18a645fd]" started-at="2025-09-23T14:45:10 GMT" name="testDeleteDiagnostic" description="Test de suppression d&#039;un diagnostic" finished-at="2025-09-23T14:45:14 GMT" duration-ms="3799" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteDiagnostic -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ansut.DiagnosticTest@201aa8c1]" started-at="2025-09-22T13:27:40 GMT" name="tearDown" finished-at="2025-09-22T13:27:41 GMT" duration-ms="471" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ansut.DiagnosticTest@18a645fd]" started-at="2025-09-23T14:45:14 GMT" name="tearDown" finished-at="2025-09-23T14:45:14 GMT" duration-ms="515" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ansut.DiagnosticTest -->
       <class name="com.ansut.LoginAnsutTest">
-        <test-method signature="testLoginSuccess()[pri:0, instance:com.ansut.LoginAnsutTest@5d58c727]" started-at="2025-09-22T13:27:41 GMT" name="testLoginSuccess" description="Test de connexion réussie avec des identifiants valides" finished-at="2025-09-22T13:27:45 GMT" duration-ms="4821" status="FAIL">
+        <test-method signature="testLoginSuccess()[pri:0, instance:com.ansut.LoginAnsutTest@6090f3ca]" started-at="2025-09-23T14:45:14 GMT" name="testLoginSuccess" description="Test de connexion réussie avec des identifiants valides" finished-at="2025-09-23T14:45:23 GMT" duration-ms="9367" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Test de connexion échoué : Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
@@ -605,95 +307,163 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginSuccess -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ansut.LoginAnsutTest@5d58c727]" started-at="2025-09-22T13:27:45 GMT" name="tearDown" finished-at="2025-09-22T13:27:46 GMT" duration-ms="269" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ansut.LoginAnsutTest@6090f3ca]" started-at="2025-09-23T14:45:23 GMT" name="tearDown" finished-at="2025-09-23T14:45:24 GMT" duration-ms="363" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ansut.LoginAnsutTest -->
       <class name="com.ansut.OperateurTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ansut.OperateurTest@4f20a5e0]" started-at="2025-09-22T13:31:58 GMT" name="setUp" finished-at="2025-09-22T13:32:05 GMT" duration-ms="6458" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ansut.OperateurTest@25b865b5]" started-at="2025-09-23T14:47:36 GMT" name="setUp" finished-at="2025-09-23T14:47:43 GMT" duration-ms="7105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ansut.OperateurTest@4f20a5e0]" started-at="2025-09-22T13:32:05 GMT" name="beforeMethod" finished-at="2025-09-22T13:32:07 GMT" duration-ms="2002" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ansut.OperateurTest@25b865b5]" started-at="2025-09-23T14:47:43 GMT" name="beforeMethod" finished-at="2025-09-23T14:47:45 GMT" duration-ms="2016" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="testCreateOperateur()[pri:1, instance:com.ansut.OperateurTest@4f20a5e0]" started-at="2025-09-22T13:32:07 GMT" name="testCreateOperateur" description="Test de création d&#039;un prestataire" finished-at="2025-09-22T13:32:09 GMT" duration-ms="2728" status="PASS">
+        <test-method signature="testCreateOperateur()[pri:1, instance:com.ansut.OperateurTest@25b865b5]" started-at="2025-09-23T14:47:45 GMT" name="testCreateOperateur" description="Test de création d&#039;un prestataire" finished-at="2025-09-23T14:47:48 GMT" duration-ms="2800" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateOperateur -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ansut.OperateurTest@4f20a5e0]" started-at="2025-09-22T13:32:09 GMT" name="afterMethod" finished-at="2025-09-22T13:32:11 GMT" duration-ms="2006" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ansut.OperateurTest@25b865b5]" started-at="2025-09-23T14:47:48 GMT" name="afterMethod" finished-at="2025-09-23T14:47:50 GMT" duration-ms="2010" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ansut.OperateurTest@4f20a5e0]" started-at="2025-09-22T13:32:11 GMT" name="beforeMethod" finished-at="2025-09-22T13:32:13 GMT" duration-ms="2016" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ansut.OperateurTest@25b865b5]" started-at="2025-09-23T14:47:50 GMT" name="beforeMethod" finished-at="2025-09-23T14:47:52 GMT" duration-ms="2007" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="testSearchOperateur()[pri:2, instance:com.ansut.OperateurTest@4f20a5e0]" started-at="2025-09-22T13:32:14 GMT" name="testSearchOperateur" description="Test de recherche d&#039;un prestataire" finished-at="2025-09-22T13:32:14 GMT" duration-ms="869" status="PASS">
+        <test-method signature="testSearchOperateur()[pri:2, instance:com.ansut.OperateurTest@25b865b5]" started-at="2025-09-23T14:47:52 GMT" name="testSearchOperateur" description="Test de recherche d&#039;un prestataire" finished-at="2025-09-23T14:47:53 GMT" duration-ms="916" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchOperateur -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ansut.OperateurTest@4f20a5e0]" started-at="2025-09-22T13:32:14 GMT" name="afterMethod" finished-at="2025-09-22T13:32:16 GMT" duration-ms="2005" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ansut.OperateurTest@25b865b5]" started-at="2025-09-23T14:47:53 GMT" name="afterMethod" finished-at="2025-09-23T14:47:55 GMT" duration-ms="2015" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ansut.OperateurTest@4f20a5e0]" started-at="2025-09-22T13:32:16 GMT" name="beforeMethod" finished-at="2025-09-22T13:32:18 GMT" duration-ms="2015" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ansut.OperateurTest@25b865b5]" started-at="2025-09-23T14:47:55 GMT" name="beforeMethod" finished-at="2025-09-23T14:47:57 GMT" duration-ms="2004" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="testModifyOperateur()[pri:3, instance:com.ansut.OperateurTest@4f20a5e0]" started-at="2025-09-22T13:32:18 GMT" name="testModifyOperateur" description="Test de modification d&#039;un prestataire" finished-at="2025-09-22T13:32:20 GMT" duration-ms="1364" status="PASS">
+        <test-method signature="testModifyOperateur()[pri:3, instance:com.ansut.OperateurTest@25b865b5]" started-at="2025-09-23T14:47:57 GMT" name="testModifyOperateur" description="Test de modification d&#039;un prestataire" finished-at="2025-09-23T14:47:58 GMT" duration-ms="1462" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testModifyOperateur -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ansut.OperateurTest@4f20a5e0]" started-at="2025-09-22T13:32:20 GMT" name="afterMethod" finished-at="2025-09-22T13:32:22 GMT" duration-ms="2009" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ansut.OperateurTest@25b865b5]" started-at="2025-09-23T14:47:58 GMT" name="afterMethod" finished-at="2025-09-23T14:48:00 GMT" duration-ms="2001" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ansut.OperateurTest@4f20a5e0]" started-at="2025-09-22T13:32:22 GMT" name="beforeMethod" finished-at="2025-09-22T13:32:24 GMT" duration-ms="2015" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ansut.OperateurTest@25b865b5]" started-at="2025-09-23T14:48:00 GMT" name="beforeMethod" finished-at="2025-09-23T14:48:02 GMT" duration-ms="2010" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="testDeleteOperateur()[pri:4, instance:com.ansut.OperateurTest@4f20a5e0]" started-at="2025-09-22T13:32:24 GMT" name="testDeleteOperateur" description="Test de suppression d&#039;un prestataire" finished-at="2025-09-22T13:32:29 GMT" duration-ms="5389" status="PASS">
+        <test-method signature="testDeleteOperateur()[pri:4, instance:com.ansut.OperateurTest@25b865b5]" started-at="2025-09-23T14:48:02 GMT" name="testDeleteOperateur" description="Test de suppression d&#039;un prestataire" finished-at="2025-09-23T14:48:04 GMT" duration-ms="1954" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test de suppression échoué : stale element reference: stale element not found in the current frame
+  (Session info: chrome=140.0.7339.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe189837a675f2074df7bd4c4f241380, clickElement {id=f.AC46FDD48F5AB2A894599F0362E4A658.d.7E196B7C8F304C13A25DB3EA15734CF1.e.92}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60231}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60231/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (fe189837a675f2074df7bd4c4f241380)] -> class name: swal2-confirm]
+Session ID: fe189837a675f2074df7bd4c4f241380]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test de suppression échoué : stale element reference: stale element not found in the current frame
+  (Session info: chrome=140.0.7339.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe189837a675f2074df7bd4c4f241380, clickElement {id=f.AC46FDD48F5AB2A894599F0362E4A658.d.7E196B7C8F304C13A25DB3EA15734CF1.e.92}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60231}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60231/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (fe189837a675f2074df7bd4c4f241380)] -> class name: swal2-confirm]
+Session ID: fe189837a675f2074df7bd4c4f241380
+at org.testng.Assert.fail(Assert.java:111)
+at com.ansut.OperateurTest.testDeleteOperateur(OperateurTest.java:182)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteOperateur -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ansut.OperateurTest@4f20a5e0]" started-at="2025-09-22T13:32:29 GMT" name="afterMethod" finished-at="2025-09-22T13:32:31 GMT" duration-ms="2009" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ansut.OperateurTest@25b865b5]" started-at="2025-09-23T14:48:04 GMT" name="afterMethod" finished-at="2025-09-23T14:48:06 GMT" duration-ms="2011" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ansut.OperateurTest@4f20a5e0]" started-at="2025-09-22T13:32:31 GMT" name="tearDown" finished-at="2025-09-22T13:32:31 GMT" duration-ms="202" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ansut.OperateurTest@25b865b5]" started-at="2025-09-23T14:48:06 GMT" name="tearDown" finished-at="2025-09-23T14:48:09 GMT" duration-ms="2577" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ansut.OperateurTest -->
       <class name="com.ansut.TravauxTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ansut.TravauxTest@1d782abe]" started-at="2025-09-22T13:32:59 GMT" name="setUp" finished-at="2025-09-22T13:33:05 GMT" duration-ms="5495" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ansut.TravauxTest@6872f9c8]" started-at="2025-09-23T14:48:47 GMT" name="setUp" finished-at="2025-09-23T14:49:21 GMT" duration-ms="34175" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ansut.TravauxTest@1d782abe]" started-at="2025-09-22T13:33:05 GMT" name="beforeMethod" finished-at="2025-09-22T13:33:08 GMT" duration-ms="3012" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ansut.TravauxTest@6872f9c8]" started-at="2025-09-23T14:49:21 GMT" name="beforeMethod" finished-at="2025-09-23T14:49:24 GMT" duration-ms="3008" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="testCreateTravaux()[pri:1, instance:com.ansut.TravauxTest@1d782abe]" started-at="2025-09-22T13:33:08 GMT" name="testCreateTravaux" description="Test de création d&#039;un travail programmé" finished-at="2025-09-22T13:34:27 GMT" duration-ms="78970" status="FAIL">
+        <test-method signature="testCreateTravaux()[pri:1, instance:com.ansut.TravauxTest@6872f9c8]" started-at="2025-09-23T14:49:24 GMT" name="testCreateTravaux" description="Test de création d&#039;un travail programmé" finished-at="2025-09-23T14:49:33 GMT" duration-ms="8509" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Test de création échoué : Expected condition failed: waiting for element to be clickable: By.className: swal2-confirm (tried for 60 second(s) with 500 milliseconds interval)
+              <![CDATA[Test de création échoué : invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=140.0.7339.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
 Build info: version: '4.27.0', revision: 'd6e718d134'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61880}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61880/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fc52244a7b7a89b882f2c6f737125145]]>
+Command: [516a51052a83161065a8d51bb5b81d00, findElement {value=/html/body/app-root/div/app-main-layout/div/div[2]/app-travaux-programmes/div/app-form-travaux-programmes/div/div/div[2]/div/form/div[1]/div/div/div[2]/div/div[1]/div[1]/p-calendar/span/div/div[1]/div/div[2]/table/tbody/tr[4]/td[7]/span, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55534}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55534/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 516a51052a83161065a8d51bb5b81d00]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Test de création échoué : Expected condition failed: waiting for element to be clickable: By.className: swal2-confirm (tried for 60 second(s) with 500 milliseconds interval)
+              <![CDATA[java.lang.AssertionError: Test de création échoué : invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=140.0.7339.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
 Build info: version: '4.27.0', revision: 'd6e718d134'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61880}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61880/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fc52244a7b7a89b882f2c6f737125145
+Command: [516a51052a83161065a8d51bb5b81d00, findElement {value=/html/body/app-root/div/app-main-layout/div/div[2]/app-travaux-programmes/div/app-form-travaux-programmes/div/div/div[2]/div/form/div[1]/div/div/div[2]/div/div[1]/div[1]/p-calendar/span/div/div[1]/div/div[2]/table/tbody/tr[4]/td[7]/span, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55534}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55534/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 516a51052a83161065a8d51bb5b81d00
 at org.testng.Assert.fail(Assert.java:111)
 at com.ansut.TravauxTest.testCreateTravaux(TravauxTest.java:111)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -735,31 +505,31 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateTravaux -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ansut.TravauxTest@1d782abe]" started-at="2025-09-22T13:34:27 GMT" name="afterMethod" finished-at="2025-09-22T13:34:30 GMT" duration-ms="3011" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ansut.TravauxTest@6872f9c8]" started-at="2025-09-23T14:49:33 GMT" name="afterMethod" finished-at="2025-09-23T14:49:36 GMT" duration-ms="3006" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ansut.TravauxTest@1d782abe]" started-at="2025-09-22T13:34:30 GMT" name="beforeMethod" finished-at="2025-09-22T13:34:33 GMT" duration-ms="3013" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ansut.TravauxTest@6872f9c8]" started-at="2025-09-23T14:49:36 GMT" name="beforeMethod" finished-at="2025-09-23T14:49:39 GMT" duration-ms="3001" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="testSearchTravaux()[pri:2, instance:com.ansut.TravauxTest@1d782abe]" started-at="2025-09-22T13:34:33 GMT" name="testSearchTravaux" description="Test de recherche d&#039;un travail programmé" finished-at="2025-09-22T13:35:33 GMT" duration-ms="60403" status="FAIL">
+        <test-method signature="testSearchTravaux()[pri:2, instance:com.ansut.TravauxTest@6872f9c8]" started-at="2025-09-23T14:49:39 GMT" name="testSearchTravaux" description="Test de recherche d&#039;un travail programmé" finished-at="2025-09-23T14:50:39 GMT" duration-ms="60129" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Test de recherche échoué : Expected condition failed: waiting for element to be clickable: By.className: fa-filter (tried for 60 second(s) with 500 milliseconds interval)
 Build info: version: '4.27.0', revision: 'd6e718d134'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61880}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61880/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fc52244a7b7a89b882f2c6f737125145]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55534}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55534/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 516a51052a83161065a8d51bb5b81d00]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Test de recherche échoué : Expected condition failed: waiting for element to be clickable: By.className: fa-filter (tried for 60 second(s) with 500 milliseconds interval)
 Build info: version: '4.27.0', revision: 'd6e718d134'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61880}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61880/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fc52244a7b7a89b882f2c6f737125145
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55534}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55534/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 516a51052a83161065a8d51bb5b81d00
 at org.testng.Assert.fail(Assert.java:111)
 at com.ansut.TravauxTest.testSearchTravaux(TravauxTest.java:135)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -801,315 +571,73 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchTravaux -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ansut.TravauxTest@1d782abe]" started-at="2025-09-22T13:35:33 GMT" name="afterMethod" finished-at="2025-09-22T13:35:36 GMT" duration-ms="3006" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ansut.TravauxTest@6872f9c8]" started-at="2025-09-23T14:50:39 GMT" name="afterMethod" finished-at="2025-09-23T14:50:42 GMT" duration-ms="3001" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ansut.TravauxTest@1d782abe]" started-at="2025-09-22T13:35:36 GMT" name="tearDown" finished-at="2025-09-22T13:35:36 GMT" duration-ms="239" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ansut.TravauxTest@6872f9c8]" started-at="2025-09-23T14:50:42 GMT" name="tearDown" finished-at="2025-09-23T14:50:42 GMT" duration-ms="527" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ansut.TravauxTest -->
       <class name="com.ansut.ClotureTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ansut.ClotureTest@21f9277b]" started-at="2025-09-22T13:26:59 GMT" name="setUp" finished-at="2025-09-22T13:27:04 GMT" duration-ms="5039" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ansut.ClotureTest@488b50ec]" started-at="2025-09-23T14:44:23 GMT" name="setUp" finished-at="2025-09-23T14:44:31 GMT" duration-ms="7881" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ansut.ClotureTest@21f9277b]" started-at="2025-09-22T13:27:04 GMT" name="beforeMethod" finished-at="2025-09-22T13:27:06 GMT" duration-ms="2001" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ansut.ClotureTest@488b50ec]" started-at="2025-09-23T14:44:31 GMT" name="beforeMethod" finished-at="2025-09-23T14:44:33 GMT" duration-ms="2015" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="testCreateCloture()[pri:1, instance:com.ansut.ClotureTest@21f9277b]" started-at="2025-09-22T13:27:06 GMT" name="testCreateCloture" description="Test de création d&#039;une raison de clôture" finished-at="2025-09-22T13:27:09 GMT" duration-ms="2930" status="PASS">
+        <test-method signature="testCreateCloture()[pri:1, instance:com.ansut.ClotureTest@488b50ec]" started-at="2025-09-23T14:44:33 GMT" name="testCreateCloture" description="Test de création d&#039;une raison de clôture" finished-at="2025-09-23T14:44:36 GMT" duration-ms="2828" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateCloture -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ansut.ClotureTest@21f9277b]" started-at="2025-09-22T13:27:09 GMT" name="afterMethod" finished-at="2025-09-22T13:27:11 GMT" duration-ms="2012" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ansut.ClotureTest@488b50ec]" started-at="2025-09-23T14:44:36 GMT" name="afterMethod" finished-at="2025-09-23T14:44:38 GMT" duration-ms="2002" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ansut.ClotureTest@21f9277b]" started-at="2025-09-22T13:27:11 GMT" name="beforeMethod" finished-at="2025-09-22T13:27:13 GMT" duration-ms="2009" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ansut.ClotureTest@488b50ec]" started-at="2025-09-23T14:44:38 GMT" name="beforeMethod" finished-at="2025-09-23T14:44:40 GMT" duration-ms="2006" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="testSearchCloture()[pri:2, instance:com.ansut.ClotureTest@21f9277b]" started-at="2025-09-22T13:27:13 GMT" name="testSearchCloture" description="Test de recherche d&#039;une raison de clôture" finished-at="2025-09-22T13:27:14 GMT" duration-ms="765" status="PASS">
+        <test-method signature="testSearchCloture()[pri:2, instance:com.ansut.ClotureTest@488b50ec]" started-at="2025-09-23T14:44:40 GMT" name="testSearchCloture" description="Test de recherche d&#039;une raison de clôture" finished-at="2025-09-23T14:44:41 GMT" duration-ms="720" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchCloture -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ansut.ClotureTest@21f9277b]" started-at="2025-09-22T13:27:14 GMT" name="afterMethod" finished-at="2025-09-22T13:27:16 GMT" duration-ms="2004" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ansut.ClotureTest@488b50ec]" started-at="2025-09-23T14:44:41 GMT" name="afterMethod" finished-at="2025-09-23T14:44:43 GMT" duration-ms="2014" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ansut.ClotureTest@21f9277b]" started-at="2025-09-22T13:27:16 GMT" name="beforeMethod" finished-at="2025-09-22T13:27:18 GMT" duration-ms="2016" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ansut.ClotureTest@488b50ec]" started-at="2025-09-23T14:44:43 GMT" name="beforeMethod" finished-at="2025-09-23T14:44:45 GMT" duration-ms="2006" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="testModifyCloture()[pri:3, instance:com.ansut.ClotureTest@21f9277b]" started-at="2025-09-22T13:27:18 GMT" name="testModifyCloture" description="Test de modification d&#039;une raison de clôture" finished-at="2025-09-22T13:27:19 GMT" duration-ms="1183" status="PASS">
+        <test-method signature="testModifyCloture()[pri:3, instance:com.ansut.ClotureTest@488b50ec]" started-at="2025-09-23T14:44:45 GMT" name="testModifyCloture" description="Test de modification d&#039;une raison de clôture" finished-at="2025-09-23T14:44:46 GMT" duration-ms="1294" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testModifyCloture -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ansut.ClotureTest@21f9277b]" started-at="2025-09-22T13:27:19 GMT" name="afterMethod" finished-at="2025-09-22T13:27:21 GMT" duration-ms="2006" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ansut.ClotureTest@488b50ec]" started-at="2025-09-23T14:44:46 GMT" name="afterMethod" finished-at="2025-09-23T14:44:48 GMT" duration-ms="2003" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ansut.ClotureTest@21f9277b]" started-at="2025-09-22T13:27:21 GMT" name="beforeMethod" finished-at="2025-09-22T13:27:23 GMT" duration-ms="2016" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ansut.ClotureTest@488b50ec]" started-at="2025-09-23T14:44:48 GMT" name="beforeMethod" finished-at="2025-09-23T14:44:50 GMT" duration-ms="2008" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="testDeleteCloture()[pri:4, instance:com.ansut.ClotureTest@21f9277b]" started-at="2025-09-22T13:27:23 GMT" name="testDeleteCloture" description="Test de suppression d&#039;une raison de clôture" finished-at="2025-09-22T13:27:25 GMT" duration-ms="1956" status="PASS">
+        <test-method signature="testDeleteCloture()[pri:4, instance:com.ansut.ClotureTest@488b50ec]" started-at="2025-09-23T14:44:50 GMT" name="testDeleteCloture" description="Test de suppression d&#039;une raison de clôture" finished-at="2025-09-23T14:44:51 GMT" duration-ms="1479" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteCloture -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ansut.ClotureTest@21f9277b]" started-at="2025-09-22T13:27:25 GMT" name="afterMethod" finished-at="2025-09-22T13:27:27 GMT" duration-ms="2011" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ansut.ClotureTest@488b50ec]" started-at="2025-09-23T14:44:51 GMT" name="afterMethod" finished-at="2025-09-23T14:44:53 GMT" duration-ms="2013" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ansut.ClotureTest@21f9277b]" started-at="2025-09-22T13:27:27 GMT" name="tearDown" finished-at="2025-09-22T13:27:28 GMT" duration-ms="275" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ansut.ClotureTest@488b50ec]" started-at="2025-09-23T14:44:53 GMT" name="tearDown" finished-at="2025-09-23T14:44:54 GMT" duration-ms="296" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ansut.ClotureTest -->
-      <class name="com.ansut.MaintenancierTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ansut.MaintenancierTest@52a36910]" started-at="2025-09-22T13:27:46 GMT" name="setUp" finished-at="2025-09-22T13:27:51 GMT" duration-ms="5414" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testCreateMaintenancier()[pri:1, instance:com.ansut.MaintenancierTest@52a36910]" started-at="2025-09-22T13:27:51 GMT" name="testCreateMaintenancier" description="Test de création d&#039;un maintenancier" finished-at="2025-09-22T13:28:55 GMT" duration-ms="63404" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Test de création échoué : Expected condition failed: waiting for element to be clickable: By.xpath: /html/body/app-root/div/app-main-layout/div/div[2]/app-parameters/div/div[2]/app-maintenancier/div/div[2]/form/div/div[1]/input (tried for 60 second(s) with 500 milliseconds interval)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51870}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51870/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e2316f2e5d1bd2cec6610c2716b02df6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Test de création échoué : Expected condition failed: waiting for element to be clickable: By.xpath: /html/body/app-root/div/app-main-layout/div/div[2]/app-parameters/div/div[2]/app-maintenancier/div/div[2]/form/div/div[1]/input (tried for 60 second(s) with 500 milliseconds interval)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51870}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51870/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e2316f2e5d1bd2cec6610c2716b02df6
-at org.testng.Assert.fail(Assert.java:111)
-at com.ansut.MaintenancierTest.testCreateMaintenancier(MaintenancierTest.java:82)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateMaintenancier -->
-        <test-method signature="testSearchMaintenancier()[pri:2, instance:com.ansut.MaintenancierTest@52a36910]" started-at="2025-09-22T13:28:55 GMT" name="testSearchMaintenancier" description="Test de recherche d&#039;un maintenancier" finished-at="2025-09-22T13:29:55 GMT" duration-ms="60229" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Test de recherche échoué : Expected condition failed: waiting for element to be clickable: By.xpath: /html/body/app-root/div/app-main-layout/div/div[2]/app-parameters/div/div[2]/app-maintenancier/div/div[1]/div/div[2]/div/app-filter-v2/div/div[2]/div[1]/div[2]/ul/li[1]/small (tried for 60 second(s) with 500 milliseconds interval)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51870}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51870/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e2316f2e5d1bd2cec6610c2716b02df6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Test de recherche échoué : Expected condition failed: waiting for element to be clickable: By.xpath: /html/body/app-root/div/app-main-layout/div/div[2]/app-parameters/div/div[2]/app-maintenancier/div/div[1]/div/div[2]/div/app-filter-v2/div/div[2]/div[1]/div[2]/ul/li[1]/small (tried for 60 second(s) with 500 milliseconds interval)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51870}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51870/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e2316f2e5d1bd2cec6610c2716b02df6
-at org.testng.Assert.fail(Assert.java:111)
-at com.ansut.MaintenancierTest.testSearchMaintenancier(MaintenancierTest.java:106)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSearchMaintenancier -->
-        <test-method signature="testModifyMaintenancier()[pri:3, instance:com.ansut.MaintenancierTest@52a36910]" started-at="2025-09-22T13:29:55 GMT" name="testModifyMaintenancier" description="Test de modification d&#039;un maintenancier" finished-at="2025-09-22T13:30:55 GMT" duration-ms="60356" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Test de modification échoué : Expected condition failed: waiting for element to be clickable: By.xpath: /html/body/app-root/div/app-main-layout/div/div[2]/app-parameters/div/div[2]/app-maintenancier/div/table-component/div[1]/table/tbody/tr[1]/td[3]/span/button[1]/img (tried for 60 second(s) with 500 milliseconds interval)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51870}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51870/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e2316f2e5d1bd2cec6610c2716b02df6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Test de modification échoué : Expected condition failed: waiting for element to be clickable: By.xpath: /html/body/app-root/div/app-main-layout/div/div[2]/app-parameters/div/div[2]/app-maintenancier/div/table-component/div[1]/table/tbody/tr[1]/td[3]/span/button[1]/img (tried for 60 second(s) with 500 milliseconds interval)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51870}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51870/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e2316f2e5d1bd2cec6610c2716b02df6
-at org.testng.Assert.fail(Assert.java:111)
-at com.ansut.MaintenancierTest.testModifyMaintenancier(MaintenancierTest.java:130)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testModifyMaintenancier -->
-        <test-method signature="testDeleteMaintenancier()[pri:4, instance:com.ansut.MaintenancierTest@52a36910]" started-at="2025-09-22T13:30:55 GMT" name="testDeleteMaintenancier" description="Test de suppression d&#039;un maintenancier" finished-at="2025-09-22T13:31:56 GMT" duration-ms="60477" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Test de suppression échoué : Expected condition failed: waiting for element to be clickable: By.cssSelector: body > app-root > div > app-main-layout > div > div.main-content.main > app-parameters > div > div.tab-content.mt-3 > app-maintenancier > div > table-component > div.table-container.card > table > tbody > tr:nth-child(1) > td:nth-child(3) > span > button:nth-child(2) > img (tried for 60 second(s) with 500 milliseconds interval)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51870}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51870/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e2316f2e5d1bd2cec6610c2716b02df6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Test de suppression échoué : Expected condition failed: waiting for element to be clickable: By.cssSelector: body > app-root > div > app-main-layout > div > div.main-content.main > app-parameters > div > div.tab-content.mt-3 > app-maintenancier > div > table-component > div.table-container.card > table > tbody > tr:nth-child(1) > td:nth-child(3) > span > button:nth-child(2) > img (tried for 60 second(s) with 500 milliseconds interval)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51870}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51870/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e2316f2e5d1bd2cec6610c2716b02df6
-at org.testng.Assert.fail(Assert.java:111)
-at com.ansut.MaintenancierTest.testDeleteMaintenancier(MaintenancierTest.java:154)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDeleteMaintenancier -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ansut.MaintenancierTest@52a36910]" started-at="2025-09-22T13:31:56 GMT" name="tearDown" finished-at="2025-09-22T13:31:56 GMT" duration-ms="833" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.ansut.MaintenancierTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

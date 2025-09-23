@@ -141,12 +141,14 @@ public class travaux {
         dateDebut.click();
         WebElement day21 = wait.until(
             ExpectedConditions.elementToBeClickable(
-                By.cssSelector("body > app-root > div > app-main-layout > div > div.main-content.main > app-travaux-programmes > div > app-form-travaux-programmes > div > div > div:nth-child(2) > div > form > div.container.m-1.w-100 > div > div > div:nth-child(2) > div > div.style-date > div:nth-child(1) > p-calendar > span > div > div.p-datepicker-group-container.ng-tns-c125-1.ng-star-inserted > div > div.p-datepicker-calendar-container.ng-tns-c125-1.ng-star-inserted > table > tbody > tr:nth-child(4) > td.ng-tns-c125-1.p-datepicker-today.ng-star-inserted > span")
+                By.cssSelector(
+                    "/html/body/app-root/div/app-main-layout/div/div[2]/app-travaux-programmes/div/app-form-travaux-programmes/div/div/div[2]/div/form/div[1]/div/div/div[2]/div/div[1]/div[1]/p-calendar/span/div/div[1]/div/div[2]/table/tbody/tr[4]/td[7]/span"
+                )
             )
         );
         day21.click();
 
-        
+         Thread.sleep(3000);
         WebElement dateFin = wait.until(
             ExpectedConditions.elementToBeClickable(
                 By.xpath(
@@ -157,9 +159,12 @@ public class travaux {
         dateFin.click();
         WebElement day25 = wait.until(
             ExpectedConditions.elementToBeClickable(
-                By.xpath("/html/body/app-root/div/app-main-layout/div/div[2]/app-travaux-programmes/div/app-form-travaux-programmes/div/div/div[2]/div/form/div[1]/div/div/div[2]/div/div[1]/div[2]/p-calendar/span/div/div[1]/div/div[2]/table/tbody/tr[5]/td[2]/span")
+                By.xpath(
+                    "/html/body/app-root/div/app-main-layout/div/div[2]/app-travaux-programmes/div/app-form-travaux-programmes/div/div/div[2]/div/form/div[1]/div/div/div[2]/div/div[1]/div[1]/p-calendar/span/div/div[1]/div/div[2]/table/tbody/tr[5]/td[2]/span"
+                )
             )
         );
+
         day25.click();
         
         wait.until(

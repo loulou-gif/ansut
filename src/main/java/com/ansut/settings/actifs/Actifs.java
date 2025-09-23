@@ -96,7 +96,7 @@ public class Actifs {
         );
         maintainer.click();
         maintainer.sendKeys("RAKALL");
-        Thread.sleep(5000);
+        Thread.sleep(200);
 
         wait.until(
             ExpectedConditions.elementToBeClickable(
@@ -125,7 +125,6 @@ public class Actifs {
             )
         ).click();
 
-        Thread.sleep(2000);
     }
 
     @Step("Recherche d'un actif")
@@ -185,14 +184,15 @@ public class Actifs {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
         Actions action = new Actions(driver);
         
-        wait.until(
+
+        WebElement btnModify = wait.until(
             ExpectedConditions.elementToBeClickable(
                 By.xpath(
                     "/html/body/app-root/div/app-main-layout/div/div[2]/app-parameters/div/div[2]/app-actif/div/table-component/div[1]/table/tbody/tr[1]/td[4]/span/button[1]/img"
                 )
             )
-        ).click();
-
+        );
+        btnModify.click();
         WebElement libelle = wait.until(
             ExpectedConditions.elementToBeClickable(
                 By.xpath(
@@ -249,9 +249,9 @@ public class Actifs {
                 )
             )
         );
-        
+        select.clear();
         select.click();
-        select.sendKeys("Test modifier");
+        select.sendKeys("Test");
 
         wait.until(
             ExpectedConditions.elementToBeClickable(
@@ -264,7 +264,7 @@ public class Actifs {
         wait.until(
             ExpectedConditions.elementToBeClickable(
                 By.xpath(
-                    "/html/body/app-root/div/app-main-layout/div/div[2]/app-parameters/div/div[2]/app-actif/div/table-component/div[1]/table/tbody/tr[1]/td[4]/span/button[2]"
+                    "/html/body/app-root/div/app-main-layout/div/div[2]/app-parameters/div/div[2]/app-actif/div/table-component/div[1]/table/tbody/tr[1]/td[4]/span/button[2]/img"
                 )
             )
         ).click();

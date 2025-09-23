@@ -245,8 +245,8 @@ public void search() throws InterruptedException{
                 )
             )
         );
-        select.clear();
         select.click();
+        select.clear();
         select.sendKeys("Test modify");
 
         wait.until(

@@ -170,7 +170,7 @@ public class createMethod {
         );
 
         libelle.clear();
-        libelle.sendKeys("Test modify");
+        libelle.sendKeys("Test Atomate");
 
         WebElement code = wait.until(
             ExpectedConditions.elementToBeClickable(
@@ -217,7 +217,7 @@ public class createMethod {
             )
         );
         select.clear();
-        select.sendKeys("Test modify");
+        select.sendKeys("Test Atomate");
 
         wait.until(
             ExpectedConditions.elementToBeClickable(
@@ -265,8 +265,6 @@ public class createMethod {
                 )
             )
         ).click();
-
-        Thread.sleep(20000);
     }
 
 }
