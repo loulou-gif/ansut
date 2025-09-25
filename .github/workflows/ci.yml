@@ -22,6 +22,7 @@ jobs:
               run: mvn clean install -q
             - name: Run tests
               run: mvn clean test
+              
             - name: Generate allure report
               if: always()
               run: mvn allure:report
